@@ -1,5 +1,6 @@
 let controller;
 let letterScene;
+let pageScene;
 
 function animateLetters() {
   // Init controller
@@ -14,34 +15,19 @@ function animateLetters() {
 
     // GSAP
     const letterTimeline = new gsap.timeline({
-      defaults: { duration: 1.5, ease: "bounce.out" }
+      defaults: { duration: 1, ease: "power3.ease" }
     });
 
     letterTimeline.fromTo(
       letter,
-      { y: "-200%", opacity: 0 },
-      { y: "0%", opacity: 1 }
+      { x: "-200%", opacity: 0 },
+      { x: "0%", opacity: 1 }
     );
-
-    // This is a custom bounce that also has a squish effect. I won't be able to get it to work until I implement svg letters
-
-    // CustomBounce.create("myBounce", { strength: 0.7, squash: 3 });
-    // tl.to("#ball", duration, { y: 550, ease: "myBounce" }).to(
-    //   "#ball",
-    //   duration,
-    //   {
-    //     scaleY: 0.5,
-    //     scaleX: 1.3,
-    //     ease: "myBounce-squash",
-    //     transformOrigin: "bottom"
-    //   },
-    //   0
-    // );
 
     // Create a scene
     letterScene = new ScrollMagic.Scene({
       triggerElement: alpha,
-      triggerHook: 0.5
+      triggerHook: 0.35
     })
       .setTween(letterTimeline)
       .addTo(controller);
