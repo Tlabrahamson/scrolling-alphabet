@@ -39,8 +39,6 @@ function animateLetters() {
   });
 }
 
-animateLetters();
-
 new Vivus("A-svg", { duration: 100, type: "oneByOne" }, animateLetters());
 new Vivus("B-svg", { duration: 100, type: "oneByOne" }, animateLetters());
 new Vivus("C-svg", { duration: 100, type: "oneByOne" }, animateLetters());
