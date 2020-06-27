@@ -4,10 +4,8 @@
   box-sizing: border-box;
 }
 
-.page-container {
-  position: relative;
-  overflow-x: hidden;
-  background: #3d5e38;
+html {
+  scroll-snap-type: y mandatory;
 }
 
 .letter-container {
@@ -15,6 +13,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  background: #3d5e38;
+  scroll-snap-align: start;
+  background-image: url("./images/board.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .letter {
@@ -29,8 +34,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .letter-container {
+    height: 70vh;
+  }
   .letter {
-    font-size: 20rem;
+    font-size: 28rem;
   }
 
   .letter span {

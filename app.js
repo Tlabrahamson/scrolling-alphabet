@@ -27,7 +27,7 @@ function animateLetters() {
     // Create a scene
     letterScene = new ScrollMagic.Scene({
       triggerElement: alpha,
-      triggerHook: 0.35
+      triggerHook: 0.39
     })
       .setTween(letterTimeline)
       .addTo(controller);
