@@ -18,12 +18,6 @@ function animateLetters() {
       defaults: { duration: 1, ease: "power3.ease" }
     });
 
-    letterTimeline.fromTo(
-      letter,
-      { x: "-200%", opacity: 0 },
-      { x: "0%", opacity: 1 }
-    );
-
     // Create a scene
     letterScene = new ScrollMagic.Scene({
       triggerElement: alpha,
@@ -46,3 +40,30 @@ function animateLetters() {
 }
 
 animateLetters();
+
+new Vivus("A-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("B-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("C-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("D-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("E-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("F-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("G-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("H-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("I-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("J-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("K-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("L-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("M-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("N-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("O-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("P-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("Q-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("R-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("S-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("T-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("U-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("V-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("W-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("X-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("Y-svg", { duration: 100, type: "oneByOne" }, animateLetters());
+new Vivus("Z-svg", { duration: 100, type: "oneByOne" }, animateLetters());
